@@ -14,7 +14,7 @@
 		7343E6EC277B0C15005E1DFC /* CCPlusSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7343E6EA277B0C15005E1DFC /* CCPlusSwift.xcdatamodeld */; };
 		7343E6EE277B0C16005E1DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7343E6ED277B0C16005E1DFC /* Assets.xcassets */; };
 		7343E6F1277B0C16005E1DFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7343E6EF277B0C16005E1DFC /* LaunchScreen.storyboard */; };
-		7343E6FB277B0EE4005E1DFC /* Test.c in Sources */ = {isa = PBXBuildFile; fileRef = 7343E6FA277B0EE4005E1DFC /* Test.c */; };
+		7370A3B1277E006300FAE4D7 /* Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7370A3B0277E006300FAE4D7 /* Test.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +28,8 @@
 		7343E6F0277B0C16005E1DFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7343E6F2277B0C16005E1DFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7343E6F8277B0EE4005E1DFC /* CCPlusSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CCPlusSwift-Bridging-Header.h"; sourceTree = "<group>"; };
-		7343E6F9277B0EE4005E1DFC /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
-		7343E6FA277B0EE4005E1DFC /* Test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Test.c; sourceTree = "<group>"; };
+		7370A3AF277E006300FAE4D7 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Test.h; path = ../../CCplusShare/Test.h; sourceTree = "<group>"; };
+		7370A3B0277E006300FAE4D7 /* Test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Test.cpp; path = ../../CCplusShare/Test.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,14 +62,14 @@
 		7343E6E0277B0C15005E1DFC /* CCPlusSwift */ = {
 			isa = PBXGroup;
 			children = (
+				7370A3B0277E006300FAE4D7 /* Test.cpp */,
+				7370A3AF277E006300FAE4D7 /* Test.h */,
 				7343E6E1277B0C15005E1DFC /* AppDelegate.swift */,
 				7343E6E3277B0C15005E1DFC /* SceneDelegate.swift */,
 				7343E6E5277B0C15005E1DFC /* ViewController.swift */,
 				7343E6E7277B0C15005E1DFC /* Main.storyboard */,
 				7343E6ED277B0C16005E1DFC /* Assets.xcassets */,
 				7343E6EF277B0C16005E1DFC /* LaunchScreen.storyboard */,
-				7343E6F9277B0EE4005E1DFC /* Test.h */,
-				7343E6FA277B0EE4005E1DFC /* Test.c */,
 				7343E6F2277B0C16005E1DFC /* Info.plist */,
 				7343E6EA277B0C15005E1DFC /* CCPlusSwift.xcdatamodeld */,
 				7343E6F8277B0EE4005E1DFC /* CCPlusSwift-Bridging-Header.h */,
@@ -149,11 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7343E6FB277B0EE4005E1DFC /* Test.c in Sources */,
 				7343E6E6277B0C15005E1DFC /* ViewController.swift in Sources */,
 				7343E6E2277B0C15005E1DFC /* AppDelegate.swift in Sources */,
 				7343E6E4277B0C15005E1DFC /* SceneDelegate.swift in Sources */,
 				7343E6EC277B0C15005E1DFC /* CCPlusSwift.xcdatamodeld in Sources */,
+				7370A3B1277E006300FAE4D7 /* Test.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,8 +301,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W2TQ6HFG67;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CCPlusSwift/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -317,6 +319,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lee.kr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "CCPlusSwift/CCPlusSwift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -331,8 +334,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W2TQ6HFG67;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CCPlusSwift/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -347,6 +352,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lee.kr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "CCPlusSwift/CCPlusSwift-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

@@ -27,7 +27,7 @@ class ViewController: UIViewController {
             BB.deallocate()
         }
         
-        good_swap(AA, BB)
+        GS(AA, BB)
         
         print("A = \(AA.pointee), B = \(BB.pointee)")
         
